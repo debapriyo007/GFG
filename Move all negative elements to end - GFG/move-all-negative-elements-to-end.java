@@ -79,4 +79,23 @@ class Solution {
         }
         
     }
+
+ //----------------------DS APPROACH:-------------------------------------------------------------------------------------------------------------------------
+    //creating two array list.. 
+        List<Integer> posNum = new ArrayList<>();
+        List<Integer> negNum = new ArrayList<>();
+        
+        for(int i = 0 ;i<n ;i++){ 
+            //first iterate the whole array ..
+            if(arr[i]>=0){ // if the array elem is greater than zero or equal to zero then it's should be added in the first array list
+                posNum.add(arr[i]);
+            }else{
+                negNum.add(arr[i]); //if smaller then added 2nd one..
+            }
+        }
+        posNum.addAll(negNum); //then add both array list in one..
+        for(int i =0 ;i<n ;i++){ //show the elements..
+            arr[i]= posNum.get(i);
+        }
+        
 }
