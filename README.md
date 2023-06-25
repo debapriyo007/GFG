@@ -1,3 +1,3 @@
 # LeetCode
 
-📍 More will be uploded soon..
+📍 README will be updated soon..
